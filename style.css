@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Tema Claro*/
+
+body {
+  font-family: 'Inter';
+  font-size: 1.6rem;
+
+  width: 144rem;
+  height: 86.4rem;
+  transition: 1s all;
+}
+
+body.claro {
+  background-color: #f3f5fc;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 12rem;
+  height: 4.8rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+input {
+  position: absolute;
+  width: 68rem;
+  height: 4.8rem;
+  margin-top: 16.8rem;
+  margin-left: 24rem;
+  border: none;
+  font-size: 3.2rem;
+  line-height: 150%;
+}
+
+input.claro {
+  background-color: #f3f5fc;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+
+  position: absolute;
+  width: 30.2rem;
+  height: 1.8rem;
+  margin-left: 24rem;
+  margin-top: 63.5rem;
+  opacity: 0.8;
+}
+
+.info .claro #icone-tema-escuro {
+  display: none;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 2.4rem;
+  position: absolute;
+  margin-top: 66.9rem;
+  margin-left: 24rem;
+}
+
+#botao-criptografar {
+  width: 32.8rem;
+  height: 6.7rem;
+  gap: 0.8rem;
+  border-radius: 2.4rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#botao-criptografar.claro {
+  background-color: #0a3871;
+  color: white;
+}
+
+#botao-criptografar:hover {
+  transform: scale(1.1);
+}
+
+#botao-descriptografar,
+#botao-copiar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  width: 32.8rem;
+  height: 6.7rem;
+  gap: 0.8rem;
+  border-radius: 2.4rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#botao-copiar {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 45.5rem;
+}
+#botao-descriptografar:hover,
+#botao-copiar:hover {
+  transform: scale(1.1);
+}
+
+#mensagem-inicial,
+#mensagem-resultado {
+  width: 40rem;
+  height: 85.4rem;
+  margin-left: 100rem;
+  margin-top: 4rem;
+  border-radius: 3.2rem;
+}
+
+#mensagem-inicial {
+  padding: 0 3.2rem;
+}
+
+#mensagem-resultado {
+  padding: 18rem 3.2rem;
+}
+
+.bloco-lateral {
+  background-color: #fdfdfd;
+  color: black;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#mensagem-inicial img {
+  margin: 0 auto;
+  padding-top: 24.3rem;
+  padding-bottom: 3.2rem;
+}
+
+#mensagem-inicial h2 {
+  font-size: 2.4rem;
+  line-height: 120%;
+  color: #343a40;
+  text-align: center;
+  padding-bottom: 1.6rem;
+  text-align: center;
+}
+
+#mensagem-inicial p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #495057;
+  text-align: center;
+}
+
+#mensagem-inicial #frase {
+  position: absolute;
+  margin: 0 auto;
+  width: 34rem;
+  padding-top: 24.3rem;
+}
+
+.oculto {
+  display: none;
+}
+
+.tema {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 4rem;
+  margin-left: 82rem;
+  cursor: pointer;
+}
+
+/* Tema Escuro*/
+
+input.escuro,
+body.escuro,
+.escuro .info {
+  background-color: #515151;
+  color: white;
+}
+
+.escuro #botao-criptografar {
+  background-color: #89bcfb;
+  color: #0a3871;
+  transition: 1s all;
+}

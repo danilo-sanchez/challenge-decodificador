@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Decodificador de Texto - Alura Challenges Oracle ONE - Danilo Sanchez
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="claro">
+    <header>
+      <div class="logo">
+        <img src="./images/Logo.png" alt="logo" />
+      </div>
+      <div class="tema">
+        <img src="./images/moon.png" id="lua" alt="lua" />
+        <img src="./images/sun.png" id="sol" alt="sol" />
+      </div>
+    </header>
+    <main>
+      <form>
+      <input class="claro" type="text" id="texto" placeholder="Digite seu texto" required />
+      <div class="info claro">
+        <img src="./images/exclamation-circle-claro.png" alt="icone de alerta" id="icone-tema-claro" class="oculto">
+        <img src="./images/exclamation-circle-escuro.png" alt="icone de alerta" id="icone-tema-escuro">
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div class="botoes">
+        <button id="botao-criptografar" class="claro">Criptografar</button>
+        <button id="botao-descriptografar">Descriptografar</button>
+      </form>
+      </div>
+    </main>
+    <section id="mensagem-inicial" class="bloco-lateral">
+        <img src="./images/busca.png" alt="imagem de um personagem segurando uma lupa">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+    </section>
+    <section id="mensagem-resultado" class="oculto">
+      <h2 id="frase"></h2>
+      <button id="botao-copiar">Copiar</button>
+      </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
